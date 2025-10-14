@@ -42,3 +42,36 @@ A comprehensive C-based file management system that provides robust file editing
 | 11 | Show Change Log | View operation history |
 | 12 | Show Number of Lines | Count lines in file |
 | 13 | Exit | Close application |
+
+
+## Project Structure
+### Core Components
+**Main Program Loop** - Handles user input and menu navigation
+**File Operations Module** - Manages file creation, copying, deletion
+**Line Editing Module** - Handles line-level manipulations
+**Change Log System** - Tracks all operations with timestamps
+
+### Key Functions
+`createFile()` - File creation with multi-line input
+`copyFile()` - File duplication
+`deleteFile()` - Secure file removal
+`appendLine()`/`insertLine()`/`deleteLine()`/`editLine()` - Line editing suite
+`addToLog()` - Change tracking with timestamps
+`countLines()` - Accurate line counting
+
+
+## Technical Details
+### Constants
+`MAX_FILENAME = 100` - Maximum filename length
+`MAX_CONTENT = 1000` - Maximum file content buffer
+`MAX_LINE = 1000` - Maximum line length
+`MAX_LOG = 1000` - Maximum change log entries
+
+### Global Variables
+`changeLog[MAX_LOG][256]` - Circular buffer for operation logs
+`logIndex` - Current position in change log
+
+### Input Handling
+1. Uses `fgets()` for safe input reading
+2. Proper newline character removal
+3. Input validation and error handling
