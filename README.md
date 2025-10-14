@@ -3,7 +3,7 @@ A comprehensive C-based file management system that provides robust file editing
 
 
 ## Features
-### File Operations
+### 1. File Operations
 1. Create new files with multi-line content
 2. Copy files to new locations
 3. Delete files securely
@@ -11,7 +11,7 @@ A comprehensive C-based file management system that provides robust file editing
 5. Display complete file contents
 
 
-### Line Editing
+### 2. Line Editing
 1. Append new lines to files
 2. Insert lines at specific positions
 3. Delete specific lines
@@ -19,7 +19,7 @@ A comprehensive C-based file management system that provides robust file editing
 5. View individual lines
 6. Count total lines in files
 
-### Change Tracking
+### 3. Change Tracking
 1. Comprehensive change log with timestamps
 2. Operation tracking (create, copy, delete, edit, etc.)
 3. Line count monitoring
